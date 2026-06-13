@@ -1,0 +1,30 @@
+# Actualizar sistema
+sudo apt update
+sudo apt upgrade -y
+
+# Instalar Nginx
+sudo apt install nginx -y
+
+# Verificar servicio
+sudo systemctl status nginx
+
+# Habilitar inicio automático
+sudo systemctl enable nginx
+
+# Crear página personalizada
+sudo nano /var/www/html/index.html
+
+# Reiniciar Nginx
+sudo systemctl restart nginx
+
+# Verificar reglas firewall
+sudo ufw status
+
+# Permitir SSH
+sudo ufw allow 22/tcp
+
+# Permitir HTTP
+sudo ufw allow 80/tcp
+
+# Activar firewall
+sudo ufw enable
